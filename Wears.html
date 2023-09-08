@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>G-Tag.com</title>
+        <link rel="stylesheet" href="Wears.css">
+        <script lang="javascript" src="Wears.js"></script>
+    </head>
+    <body>
+        <ul>
+        <li><a href="index.html" style="text-decoration: none; color: black;">Back</a></li>
+        <li><a href="News.html" style="text-decoration: none; color: black;">News</a></li>
+        <li><a href="Collection.html" style="text-decoration: none; color: black;">Collection</a></li>
+        <li><a href="Wears.html" style="text-decoration: none; color: black;">Wears</a></li>
+        </ul>
+        <div id="male" >
+        <a href="Gents.html" style="text-decoration: none;"><h3 style="margin-left: 600px;">Gents</h3></a>
+        </div>
+        <img src="Tees 6.jpg" style="margin-left: 230px; width: 900px; margin-top: -5px;">
+
+        <div id="female" >
+            <a href="Ladys.html" style="text-decoration: none;"><h2 style="margin-left: 600px;">Ladys</h2></a>
+        </div>
+            <img src="Ladys.jpg" style="margin-left: 230px; width: 900px; margin-top: 20px;">
+    </body>
+    <footer>
+        <h4 id="tick">Sign Up below to register</h6>
+        <p id="wed">Contacs: +234 8099223144,  +234 8121055308 ||  Copywrite @ g -tagindustries.com 2023</p>
+        <div class="coal">
+            <input id="nude" type="text" value="" name="Name" required="">
+            <label style="margin-left: 41px; margin-top: -110px;">First Name</label>
+            <input id="nude" type="text" value="" name="Name">
+            <label style="margin-left: 41px; margin-top: -110px;">Last Name</label>
+            <input id="nude" type="text" value="" name="Email">
+            <label style="margin-left: 41px; margin-top: -110px;">Email address</label>
+            <button value="Confirm" onclick="check()" style="margin-left: 50px; margin-bottom: 10px;">Confirm</button>
+            <p id="poll" style="color: white; font-size: 20px ; margin-left: 200px; margin-top: -35px;" ></p>
+            </div>
+            
+            <hr>
+            <div id="kin">
+            <a href="https://www.facebook.com" style="text-decoration: none; margin: 15px;">facebook</a>
+            <a href="https://www.instagram.com" style="text-decoration: none; margin: 15px;">Instagram</a>
+            <a href="https://www.twitter.com" style="text-decoration: none; margin: 15px;">Twitter</a>
+            <a href="https://www.youtube.com" style="text-decoration: none; margin: 15px;">Youtube</a>
+            </div>
+           
+    </footer>
+</html>
+<script>
+    function check(){
+        let tex = document.getElementById('nude').value;
+        blue = (tex == "") ?  "fill the form ": "Registered";
+        document.getElementById('poll').innerHTML= blue + "<br/>";
+    }
+</script>
+

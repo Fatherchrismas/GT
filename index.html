@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>G-Tag.com</title>
+        <link rel="stylesheet" href="index.css">
+        <script lang="javascript" src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="typo">G -Tag wears</h1>
+            <div class="lie">
+            <nav>
+                <ul>
+                    <li><a href="#" style="color: black;">Home</a></li>
+                    <li><a href="News.html" style="color: black;">News</a></li>
+                    <li><a href="Collection.html" style="color: black;">Collection</a></li>
+                    <li><a href="Wears.html" style="color: black;">Wears</a></li>
+                    <div class="drop">
+                        <li><a id="tech" href="Gents.html">Gents</a></li>
+                        <li><a id="tech" href="Ladys.html">Ladys</a></li>
+                    </div>
+                </ul>
+            </nav>
+            </div>
+            <div id="reel">
+            <h5 style="color: black;">Fashion discovery</h5>
+            </div>
+        </header>
+        <section>
+        <img id="pic" src="Tees 5.jpg">
+        <p id="salt">
+            The G-Tag Tees brings you to a whole
+            world of 'Steeze', and keeps you 
+            oozing of style and drip. A casual and
+            affordable product but yet xtremely
+            fashionable to all genders (unisex).
+            Drip effortlessly.
+        </p>
+        <img id="water" src="new 1.png">
+        <p id="tank">
+            The G-Tag womens elegant fashion sense brings
+            every lady to a world of Beauty and charisma,
+            ever since the end of 2020 our brand has brought nothing 
+            but inspiration to every hustling fashion 
+            designer out there that has heard about
+            our brand 'G -Tag'.
+        </p>
+
+        <img id="wick" src="Pim.jpg" style="width: 900px; height: 650px; margin-left: 200px; margin-top: 250px;">
+         <h1>FALL WINTER 2023</h1>
+        <P style="margin-left: 490px; margin-top: -22px;"> The new Event with Liam, Chidi Egesionu, and co.</P>
+        
+
+        </section>
+    </body>
+
+    <footer>
+        <h4 id="tick">Sign Up below to register</h6>
+        <p id="wed" style="font-size: 15px;">Contacs: +234 8099223144,  +234 8121055308 ||  Copywrite @ g -tagindustries.com 2023</p>
+        <div class="coal">
+            <input id="nude" type="text" value="" name="Name" required="">
+            <label style="margin-left: 41px; margin-top: -110px;">First Name</label>
+            <input id="nude" type="text" value="" name="Name">
+            <label style="margin-left: 41px; margin-top: -110px;">Last Name</label>
+            <input id="nude" type="text" value="" name="Email">
+            <label  style="margin-left: 41px; margin-top: -110px;">Email address</label>
+            <button value="Confirm" onclick="check()" style="margin-left: 50px; margin-bottom: 10px;">Confirm</button>
+            <p id="poll" style="color: white; font-size: 20px ; margin-left: 200px; margin-top: -35px;" ></p>
+            </div> 
+            
+            <hr>
+            <div id="kin">
+            <a href="https://www.facebook.com">facebook</a>
+            <a href="https://www.instagram.com" >Instagram</a>
+            <a href="https://www.twitter.com">Twitter</a>
+            <a href="https://www.youtube.com">Youtube</a>
+            </div>
+           
+    </footer>
+</html>     
+<script>
+    let stone= ["Pim.jpg", "Pose.jpg", "Press.jpg" ];
+      setInterval("changeImage()", 4000);
+      let tot=0;
+      function changeImage(){
+        document.getElementById('wick').src= stone[tot];
+        tot++
+        if(stone.length ==tot){
+            tot=0;
+        }
+      }
+      function check(){
+        let tex = document.getElementById('nude').value;
+        blue = (tex == "") ?  "fill the form ": "Registered";
+        document.getElementById('poll').innerHTML= blue + "<br/>";
+    }
+</script>
